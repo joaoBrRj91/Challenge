@@ -1,7 +1,9 @@
 ﻿
 namespace Domain.Interfaces.Services
 {
-    interface IUsuarioGitService
+    public interface IUsuarioGitService
     {
+        bool UsuarioEhCadastradoNoGitHub(string usuarioGit);
+
     }
 }

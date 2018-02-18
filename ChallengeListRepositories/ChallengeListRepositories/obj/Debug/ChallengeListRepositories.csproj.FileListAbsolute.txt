@@ -14,6 +14,7 @@ E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Challe
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ChallengeListRepositories.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ChallengeListRepositories.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Antlr3.Runtime.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConsumoGitWebService.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Data.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Domain.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -27,6 +28,8 @@ E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Challe
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\System.Web.WebPages.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\System.Web.WebPages.Razor.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\WebGrease.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConfiguracoesProjetos.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConsumoGitWebService.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Data.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Domain.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -39,6 +42,7 @@ E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Challe
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\System.Web.WebPages.Razor.xml
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Antlr3.Runtime.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Newtonsoft.Json.xml
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConfiguracoesProjetos.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\obj\Debug\ChallengeListRepositories.csprojResolveAssemblyReference.cache
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\obj\Debug\ChallengeListRepositories.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\obj\Debug\ChallengeListRepositories.pdb

@@ -9,8 +9,10 @@ namespace ConsumoGitWebService
     public static class GitWebService
     {
 
-        public  static void ListarRepositoriosPorUsuario()
+        public  static void ListarRepositoriosPorUsuario(string usuarioGit)
         {
+            ConfigConsumoGitWebServices.UsuarioGit = usuarioGit;
+
             HttpClient httpCliente = new HttpClient();
             httpCliente.BaseAddress = new Uri(ConfigConsumoGitWebServices.ENDERECO_BASE);
             httpCliente.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(ConfigConsumoGitWebServices.HEADER_API_GIT));

@@ -2,7 +2,7 @@
 
 namespace Domain.Interfaces.Repositories
 {
-    interface IUsuarioGitRepository
+    public interface IUsuarioGitRepository
     {
     }
 }

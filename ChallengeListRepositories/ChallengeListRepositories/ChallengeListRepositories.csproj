@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GitHubController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -158,9 +159,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\GitHub\About.cshtml" />
+    <Content Include="Views\GitHub\Contact.cshtml" />
+    <Content Include="Views\GitHub\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -175,12 +176,19 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsumoGitWebService\ConsumoGitWebService.csproj">
+      <Project>{b853c550-0dcb-4f3d-b080-8b5f8d7ad649}</Project>
+      <Name>ConsumoGitWebService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{2c90369c-c2b2-4cde-a535-e6c53ceaff56}</Project>
       <Name>Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{638d25e1-6ce4-40d5-80e8-4d9e5ec6de4b}</Project>
+      <Project>{638D25E1-6CE4-40D5-80E8-4D9E5EC6DE4B}</Project>
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>

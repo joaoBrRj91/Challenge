@@ -21,7 +21,7 @@
             }
             set
             {
-                UsuarioGit = value;
+                usuarioGit = value;
                 uriUsuarioRepositorios = string.Empty;
             }
         }
@@ -42,7 +42,7 @@
         #endregion
 
         #region Metodos auxiliares
-        private static string ObterUriRepositoriosUsuario() => string.Format("/{0}/{1}", UsuarioGit, "repos");
+        private static string ObterUriRepositoriosUsuario() => string.Format("{0}/{1}", UsuarioGit, "repos");
         #endregion
 
     }

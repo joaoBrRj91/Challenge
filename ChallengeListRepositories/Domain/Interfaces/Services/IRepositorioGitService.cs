@@ -2,7 +2,8 @@
 
 namespace Domain.Interfaces.Services
 {
-    interface IRepositorioGitService
+    public interface IRepositorioGitService
     {
+        bool RepositorioExisteNoGitHub(string repositorioGit);
     }
 }
