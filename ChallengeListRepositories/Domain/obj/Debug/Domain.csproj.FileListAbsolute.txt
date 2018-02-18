@@ -1,4 +1,5 @@
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Domain\bin\Debug\Domain.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Domain\bin\Debug\Domain.pdb
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Domain\obj\Debug\Domain.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Domain\obj\Debug\Domain.pdb

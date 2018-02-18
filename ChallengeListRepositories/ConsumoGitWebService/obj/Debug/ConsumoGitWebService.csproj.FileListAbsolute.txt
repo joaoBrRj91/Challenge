@@ -1,0 +1,7 @@
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\bin\Debug\ConsumoGitWebService.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\bin\Debug\ConsumoGitWebService.pdb
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\bin\Debug\ConfiguracoesProjetos.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\bin\Debug\ConfiguracoesProjetos.pdb
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\obj\Debug\ConsumoGitWebService.csprojResolveAssemblyReference.cache
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\obj\Debug\ConsumoGitWebService.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ConsumoGitWebService\obj\Debug\ConsumoGitWebService.pdb
