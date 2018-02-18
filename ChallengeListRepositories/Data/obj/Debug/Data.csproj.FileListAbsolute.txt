@@ -1,0 +1,7 @@
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\bin\Debug\Data.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\bin\Debug\Data.pdb
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\bin\Debug\Domain.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\bin\Debug\Domain.pdb
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\obj\Debug\Data.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Data\obj\Debug\Data.pdb
