@@ -8,43 +8,51 @@
 
 <div class="panel panel-info" style="margin:50px;">
     <div class="panel-heading">
-        <h2>Repositorios do usuário - @ViewBag.UsuarioGit</h2>
+        <h2>Repositorios do Usuário GitHub- @ViewBag.UsuarioGit</h2>
 
     </div>
     <div class="panel-body">
         <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Url)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CloneUrl)
-                </th>
-                <th></th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
+            <thead>
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Url)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.CloneUrl)
-                    </td>
-
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Url)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CloneUrl)
+                    </th>
+                    <th></th>
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Url)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CloneUrl)
+                        </td>
 
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+            </tfoot>
         </table>
+
+        @if (Model.Count() == 0)
+        {
+            <span>Nenhum repositorio foi encontrado para o usuário informado.</span>
+
+        }
+
     </div>
 </div>
-
-
-

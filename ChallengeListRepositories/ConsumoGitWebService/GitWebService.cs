@@ -14,20 +14,51 @@ namespace ConsumoGitWebService
         private static HttpClient httpCliente;
         private static GitHubClient gitHubClient;
         private static List<RepositorioGitDTO> repositoriosGitDTO;
-        //private static bool CredenciaisForamAlteradas = false;
 
-        public static List<RepositorioGitDTO>  ObterRepositoriosPorUsuarioAcesso(string usuarioGit,string senha)
+        public static List<RepositorioGitDTO> ObterRepositoriosPorUsuarioAcesso(string usuarioGit, string senha)
         {
-            Dispose();
+            InicializarWebService(usuarioGit, senha);
 
-            InicializarPropriedadesParaConsumoDeCliente(usuarioGit, senha);
-
-            if (AcessoGitHubEhValido())
-            {
-                ObterRepositoriosGitDoUsuarioLogado();
-            }
+            ObterRepositoriosGitDoUsuarioLogado();
 
             return repositoriosGitDTO;
+
+        }
+
+        public static bool AcessoGitHubEhValido(string usuarioGit, string senhaGit)
+        {
+
+            InicializarWebService(usuarioGit, senhaGit);
+
+            bool acessoEhValido = false;
+
+            if (!String.IsNullOrEmpty(usuarioGit) && !String.IsNullOrEmpty(senhaGit))
+            {
+                ConfigConsumoGitWebServices.UsuarioGit = usuarioGit;
+                ConfigConsumoGitWebServices.SenhaGit = senhaGit;
+                Credentials credenciasGitHub = new Credentials(ConfigConsumoGitWebServices.UsuarioGit, ConfigConsumoGitWebServices.SenhaGit);
+                gitHubClient.Credentials = credenciasGitHub;
+                try
+                {
+                    acessoEhValido = gitHubClient.User.Get(ConfigConsumoGitWebServices.UsuarioGit).Result != null ? true : false;
+
+                }
+                catch (AggregateException)
+                {
+                    //TODO: Criar um validateHelper que irá conter a lista de mensagens de erro e a causa dos mesmos
+
+                }
+                catch (Exception e)
+                {
+                }
+                finally
+                {
+                    Dispose();
+                }
+
+            }
+
+            return acessoEhValido;
 
         }
 
@@ -35,32 +66,16 @@ namespace ConsumoGitWebService
         {
             ConfigConsumoGitWebServices.UsuarioGit = usuarioGit;
             ConfigConsumoGitWebServices.SenhaGit = senha;
+            repositoriosGitDTO = new List<RepositorioGitDTO>();
             httpCliente = new HttpClient();
             gitHubClient = new GitHubClient(new Octokit.ProductHeaderValue("octokit"));
         }
 
-        private static bool AcessoGitHubEhValido()
-        {
-            Credentials credenciasGitHub = new Credentials(ConfigConsumoGitWebServices.UsuarioGit, ConfigConsumoGitWebServices.SenhaGit);
-            gitHubClient.Credentials = credenciasGitHub;
-            bool acessoEhValido = gitHubClient.User.Get(ConfigConsumoGitWebServices.UsuarioGit).Result != null ? true : false;
-            return acessoEhValido;
-        }
-
-        //private static bool VerificarSeCredenciaisForamAlteradas(string usuarioGit, string senha)
-        //{
-        //    if (!String.IsNullOrEmpty(ConfigConsumoGitWebServices.UsuarioGit) && !ConfigConsumoGitWebServices.UsuarioGit.Equals(usuarioGit))
-        //         CredenciaisForamAlteradas = true;
-        //    if (!String.IsNullOrEmpty(ConfigConsumoGitWebServices.SenhaGit) && !ConfigConsumoGitWebServices.SenhaGit.Equals(senha))
-        //         CredenciaisForamAlteradas = true;
-
-        //    return CredenciaisForamAlteradas;
-
-        //}
+        
 
         private static List<RepositorioGitDTO> ObterRepositoriosGitDoUsuarioLogado()
         {
-            repositoriosGitDTO  = new List<RepositorioGitDTO>();
+            repositoriosGitDTO = new List<RepositorioGitDTO>();
             var buscaRepositoriosGitUsuario = new SearchRepositoriesRequest() { User = ConfigConsumoGitWebServices.UsuarioGit };
             SearchRepositoryResult repositoriosGitUsuario = gitHubClient.Search.SearchRepo(buscaRepositoriosGitUsuario).Result;
 
@@ -73,9 +88,16 @@ namespace ConsumoGitWebService
         }
 
         private static void Dispose()
-        {     
+        {
             httpCliente = null;
             gitHubClient = null;
+            repositoriosGitDTO = null;
+        }
+
+        private static void InicializarWebService(string usuarioGit,string senha)
+        {
+            Dispose();
+            InicializarPropriedadesParaConsumoDeCliente(usuarioGit, senha);
         }
 
     }

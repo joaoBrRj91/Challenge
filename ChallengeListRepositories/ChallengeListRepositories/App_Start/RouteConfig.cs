@@ -18,6 +18,8 @@ namespace ChallengeListRepositories
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "GitHub", action = "Login", id = UrlParameter.Optional }
             );
+
+
         }
     }
 }

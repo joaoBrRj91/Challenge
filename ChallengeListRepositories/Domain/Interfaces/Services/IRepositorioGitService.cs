@@ -1,6 +1,4 @@
-﻿
-
-using Domain.Entities;
+﻿using Domain.Entities;
 using System.Collections.Generic;
 
 namespace Domain.Interfaces.Services

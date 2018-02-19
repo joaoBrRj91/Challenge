@@ -30,10 +30,15 @@ namespace ChallengeListRepositories.Controllers
         [HttpPost]
         public ActionResult Login(LoginModel login)
         {
-            return RedirectToAction("ObterUsuarioRepositorios", login);
+            if (GitWebService.AcessoGitHubEhValido(login.UsuarioGit, login.SenhaGit))
+                return RedirectToAction("ObterUsuarioRepositorios", login);
+            else
+            {
+                ModelState.AddModelError("", "Credenciais Invalidas");
+                return View(login);
+            } 
         }
 
-        [HttpGet]
         public ActionResult ObterUsuarioRepositorios(LoginModel login)
         {
             ViewBag.UsuarioGit = login.UsuarioGit;
