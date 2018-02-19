@@ -26,6 +26,21 @@
             }
         }
 
+        private static string senhaGit = string.Empty;
+
+        public static string SenhaGit
+        {
+            get
+            {
+                return senhaGit;
+            }
+            set
+            {
+                senhaGit = value;
+                uriUsuarioRepositorios = string.Empty;
+            }
+        }
+
         private static string uriUsuarioRepositorios = string.Empty;
 
         public  static string UriUsuarioRepositorios

@@ -28,6 +28,7 @@ E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Challe
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\System.Web.WebPages.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\System.Web.WebPages.Razor.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\WebGrease.dll
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Octokit.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConfiguracoesProjetos.dll
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConsumoGitWebService.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Data.pdb
@@ -42,6 +43,7 @@ E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\Challe
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\System.Web.WebPages.Razor.xml
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Antlr3.Runtime.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Newtonsoft.Json.xml
+E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\Octokit.xml
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\bin\ConfiguracoesProjetos.pdb
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\obj\Debug\ChallengeListRepositories.csprojResolveAssemblyReference.cache
 E:\estudo\F-B END e Banco de Dados\ChallengeNET\ChallengeListRepositories\ChallengeListRepositories\obj\Debug\ChallengeListRepositories.dll

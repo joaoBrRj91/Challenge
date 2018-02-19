@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities
 {
-    class RepositorioGit
+    public class RepositorioGit
     {
     }
 }

@@ -1,7 +1,10 @@
-﻿using ConsumoGitWebService;
+﻿using ChallengeListRepositories.Models;
+using ConsumoGitWebService;
+using ConsumoGitWebService.DTO;
 using Data.Repositories;
 using Domain.Services;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -17,22 +20,27 @@ namespace ChallengeListRepositories.Controllers
             UsuarioGitService UsuarioGitService = new UsuarioGitService(UsuarioGitRepository);
         }
 
-        public ActionResult Index()
+       
+        [HttpGet]
+        public ActionResult Login()
         {
-            GitWebService.ListarRepositoriosPorUsuario("joaoBrRj91");
             return View();
         }
 
-        public ActionResult ObterUsuarioRepositorios(string usuarioGit)
+        [HttpPost]
+        public ActionResult Login(LoginModel login)
         {
-
-            return View();
+            return RedirectToAction("ObterUsuarioRepositorios", login);
         }
 
-        public ActionResult Contact()
+        [HttpGet]
+        public ActionResult ObterUsuarioRepositorios(LoginModel login)
         {
-
-            return View();
+            ViewBag.UsuarioGit = login.UsuarioGit;
+            List<RepositorioGitDTO> repositorios = GitWebService.ObterRepositoriosPorUsuarioAcesso(login.UsuarioGit,login.SenhaGit);
+            return View(repositorios);
         }
+
+      
     }
 }

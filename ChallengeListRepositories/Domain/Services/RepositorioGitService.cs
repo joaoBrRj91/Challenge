@@ -3,6 +3,8 @@
 using System;
 using Domain.Interfaces.Services;
 using Domain.Interfaces.Repositories;
+using Domain.Entities;
+using System.Collections.Generic;
 
 namespace Domain.Services
 {
@@ -13,6 +15,11 @@ namespace Domain.Services
         public RepositorioGitService(IRepositorioGitRepository repositorioGitRepository)
         {
             this.repositorioGitRepository = repositorioGitRepository;
+        }
+
+        public List<RepositorioGit> PreencherRepositoriosGit(IReadOnlyList<object> Items)
+        {
+            throw new NotImplementedException();
         }
 
 
