@@ -120,18 +120,18 @@
 
 
 
-        @using (Html.BeginForm("Login", "Git", FormMethod.Post, new { @class = "form-signin" }))
+        @using (Html.BeginForm("Login", "GitHub", FormMethod.Post, new { @class = "form-signin" }))
         {
 
             @Html.ValidationSummary(true)
 
             <h1 class="form-signin-heading text-muted">Repositórios GitHub</h1>
             <div style="margin-bottom:10px">
-                @Html.TextBoxFor(model => model.UsuarioGit, new { @class = "form-control", placeholder = "Informe o Login" })
+                @Html.TextBoxFor(model => model.UsuarioGit, new { @class = "form-control", placeholder = "Informe o usuario github" })
                 @Html.ValidationMessageFor(model => model.UsuarioGit, "", new { @class = "text-danger" })
             </div>
             <div style="">
-                @Html.PasswordFor(model => model.SenhaGit, new { @class = "form-control", placeholder = "Informe a Senha" })
+                @Html.PasswordFor(model => model.SenhaGit, new { @class = "form-control", placeholder = "Informe a Senha github" })
                 @Html.ValidationMessageFor(model => model.SenhaGit, "", new { @class = "text-danger" })
             </div>
 

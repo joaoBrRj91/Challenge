@@ -74,8 +74,6 @@ namespace ConsumoGitWebService
 
         private static void Dispose()
         {     
-            repositoriosGitDTO.Clear();
-            repositoriosGitDTO = null;
             httpCliente = null;
             gitHubClient = null;
         }
